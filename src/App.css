@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.auth-container {
+  width: 80%;
+  height: 85%;
+  border: 1px solid rgb(196, 69, 196);
+  display: flex;
+  flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.auth-onboarding {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth-main {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 70%;
+  height: 80%;
+  border: 1px solid rgb(151, 0, 151);
+  border-radius: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form {
+  width: 80%;
+  height: 80%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.auth-dev-log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+
+.log-header {
+  font-size: 40px;
+  color: rgb(151, 0, 151);
+}
+
+.log-grid {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 200px;
+  flex-direction: row;
+  column-gap: 5px;
+  row-gap: 5px;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.auth-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auth-image {
+  width: 200px;
+  height: 200px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-text {
+  transform: rotate(-50deg);
+}
+
+.signup-container {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.signin-container {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.form-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-direction {
+  color: rgb(49, 49, 236);
+}
+
+.auth-direction:hover {
+  cursor: pointer;
+  color: rgb(22, 22, 255);
+}
+
+.form-input {
+  border: 1px solid rgb(70, 70, 67);
+  padding: 5px;
+  width: 100%;
+  background-color: inherit;
+}
+
+.signup-form-submit {
+  padding: 8px;
+  border: 1px solid palevioletred;
+  background-color: inherit;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+}
+
+.signup-form-submit:hover {
+  cursor: pointer;
+  color: rgb(112, 112, 241);
+}
+
+.main-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terms {
+  inline-size: 240px;
+  font-size: 12px;
+  text-align: center;
 }
